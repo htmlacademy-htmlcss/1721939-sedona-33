@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Богачев](https://up.htmlacademy.ru/htmlcss/33/user/1721939).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
