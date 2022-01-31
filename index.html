@@ -8,13 +8,11 @@
 
 	<!---HEADER!-->
 	<header class="page-header">
+		<a href="index.html" class="navigation-logo">
+			<img src="#" alt="Логотип">
+		</a>
 		<nav class="navigation">
 			<ul class="navigation-list">
-				<li class="navigation-item">
-					<a href="index.html" class="navigation-logo">
-						<img src="#" alt="Логотип">
-					</a>
-				</li>
 				<li class="navigation-item">
 					<a href="index.html" class="navigation-link">Главная</a>
 				</li>
@@ -25,15 +23,15 @@
 					<a href="catalog.html" class="navigation-link">Гостиницы</a>
 				</li>
 			</ul>
-			<ul class="navigation-list">
-				<li class="navigation-item">
-					<a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a>
+			<ul class="navigation-user">
+				<li class="user-item">
+					<a href="#" class="user-link"><span class="visually-hidden">Поиск</span></a>
 				</li>
-				<li class="navigation-item">
-					<a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span></a>
+				<li class="user-item">
+					<a href="#" class="user-link"><span class="visually-hidden">Избранное</span></a>
 				</li>
-				<li class="navigation-item">
-					<a href="#" class="navigation-link"><span class="visually-hidden">Хочу сюда!</span></a>
+				<li class="user-item">
+					<a href="#" class="user-link-button"><span class="visually-hidden">Хочу сюда!</span></a>
 				</li>
 			</ul>
 		</nav>
@@ -41,63 +39,68 @@
 
 	<!---MAIN-->
 	<main class="main-index">
-		<h1 class="visually-hidden">Седона</h1>
+		<section class="banner">
+			<img src="#" alt="Добро пожаловать в Седону">
+		</section>
 		<img class="logo" src="#" alt="Логотип">
-		<h2>Седона — небольшой городок в Аризоне,
-			заслуживающий большего!</h2>
+		<h1>Седона — небольшой городок в Аризоне,
+			заслуживающий большего!</h1>
 		<section class="advantages">
 			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
-			<ul>
+			<ol>
 				<li class="advantages-item advantage-blue">
 					<h3 class="advantage-title">Настоящий городок</h3>
-					<h4 class="advantages-number">— №1 —</h4>					
+					<span class="advantages-number">— №1 —</span>					
 					<p class="advantage-discription">Седона — не аттракцион для туристов, там течёт 
 						своя жизнь</p>
 				</li>
 				<li class="advantages-item advantage-img">
 					<img src="#" alt="Город">
 				</li>
-				<li class="advantages-item advantage-grey">
-					<h3 class="advantage-title">Жилье</h3>
-					<p class="advantage-discription">Рекомендуем пожить 
-						в настоящем мотеле, 
-						всё как в кино!</p>
-				</li>
-				<li class="advantages-item advantage-white">
-					<h3 class="advantage-title">Еда</h3>					
-					<p class="advantage-discription">Всегда заказывайте
-						топовый фирменный бургер, вы не разочаруетесь!</p>
-				</li>
-				<li class="advantages-item advantage-grey">
-					<h3 class="advantage-title">Сувениры</h3>
-					<p class="advantage-discription">Не только китайского, 
-						но и настоящего местного производства!</p>
+				<li class="advantage-item">
+					<ul>
+						<li class="advantages-item advantage-grey">
+							<h3 class="advantage-title">Жилье</h3>
+							<p class="advantage-discription">Рекомендуем пожить 
+							в настоящем мотеле, всё как в кино!</p>
+						</li>
+						<li class="advantages-item advantage-white">
+							<h3 class="advantage-title">Еда</h3>					
+							<p class="advantage-discription">Всегда заказывайте
+							топовый фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+						<li class="advantages-item advantage-grey">
+							<h3 class="advantage-title">Сувениры</h3>
+							<p class="advantage-discription">Не только китайского, 
+							но и настоящего местного производства!</p>
+						</li>
+					</ul>
 				</li>
 				<li class="advantages-item advantage-img">
 					<img src="#" alt="Мост Дъявола">
 				</li>
 				<li class="advantages-item advantage-blue">
 					<h3 class="advantage-title">Там есть мост дъявола</h3>
-					<h4 class="advantages-number">— №2 —</h4>
+					<span class="advantages-number">— №2 —</span>
 					<p class="advantage-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 				</li>
 				<li class="advantages-item advantage-white">
 					<h3 class="advantage-title">Небольшая площадь</h3>
-					<h4 class="advantages-number">— №3 —</h4>
+					<span class="advantages-number">— №3 —</span>
 					<p class="advantage-discription">Все достопримечательности 
 						находятся очень близко</p>
 				</li>
 				<li class="advantages-item advantage-grey">
 					<h3 class="advantage-title">Красивая дорога</h3>
-					<h4 class="advantages-number">— №4 —</h4>
+					<span class="advantages-number">— №4 —</span>
 					<p class="advantage-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 				<li class="advantages-item advantage-white">
 					<h3 class="advantage-title">Мало туристов</h3>
-					<h4 class="advantages-number">— №5 —</h4>
+					<span class="advantages-number">— №5 —</span>
 					<p class="advantage-discription">Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
-			</ul>
+			</ol>
 			</section>
 			<section class="interested">
 				<h2 class="interested-title">Заинтересовались?</h2>
@@ -119,7 +122,7 @@
 
 	<!---FOOTER-->
 	<footer class="page-footer">
-		<section	class="footer-social">
+		<div	class="footer-social">
 			<ul class=social-item>
 				<li class="twitter">
 					<a href="https://twitter.com/htmlacademy_ru"></a>
@@ -131,13 +134,13 @@
 					<a href="https://facebook.com/htmlacademy"></a>
 				</li>
 			</ul>
-		</section>
-		<section class="telephone">
+		</div>
+		<div class="telephone">
 			<a class="contacts-phone" href="tel:88128121212">8 (812) 8121212</a>
-		</section>
-		<section class="html-link">
+		</div>
+		<div class="html-link">
 			<a href="HTMLAcademy.ru"></a>
-		</section>
+		</div>
 	</footer>
   </body>
 </html>
