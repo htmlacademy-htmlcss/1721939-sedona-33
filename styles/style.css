@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -19,7 +19,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
 }
 
 .page-header {
@@ -41,6 +41,7 @@ body {
 }
 
 .user-item-button {
+  text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
@@ -48,13 +49,12 @@ body {
 }
 
 .button-subscription {
+  text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
   background: #83b3d3;
-  border: none;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .contacts-phone {
@@ -64,105 +64,112 @@ body {
   color: #000000;
 }
 
-input {
-  color: #333333;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-a {
-  text-decoration: none;
-}
-
 a:visited.navigation-link {
   color: #000000;
   text-decoration: none;
 }
 
-li {
-  list-style-type: none;
-}
-
-.main-index {
-  background-image: url(../images/index-background.jpg);
-  background-size: 100% 485px;
+.banner {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 /*Текст-Заголовки Main*/
 .main-title-h1 {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
 }
 
 .main-title-h2 {
-  font-family: PT Sans;
-  font-style: normal;
   font-size: 22px;
   line-height: 36px;
   color: #333333;
 }
 
-/* Advantages */
+/** Advantages-item **/
 
-.advantages {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-family: PT Sans;
-  font-weight: 700;
-}
-
-.advantages-number {
-  color: #333333;
-}
-
-.advantages-number-2 {
-  color: #ffffff;
-}
-
-.advantage-item-blue {
+.advantage-item-real-city {
   color: #ffffff;
   background: #83b3d3;
 }
 
-.advantage-grey {
+.advantage-discription-white{
+  color: #ffffff
+}
+
+.advantage-item-home {
   background: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/icon-1.svg);
+  background-repeat: no-repeat;
+}
+
+.advantage-item-souvenir {
+  background: rgba(131, 179, 211, 0.2);
+  background-image: url(../images/icon-3.svg);
+  background-repeat: no-repeat;
+}
+
+.advantage-item-area {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-bridge {
+  color: #ffffff;
+  background: #83b3d3;
+}
+
+.advantage-item-burger {
+  background: #ffffff;
+  background-image: url(../images/icon-2.svg);
+  background-repeat: no-repeat;
+}
+
+.advantage-item-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-item-tourists {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantage-discription {
   color: #333333;
 }
 
-.advantage-dark-grey {
-  background: rgba(131, 179, 211, 0.2);
-  color: #333333;
-}
 
 .interested-title {
   font-weight: 700;
-  font-style: normal;
   font-size: 30px;
   line-height: 36px;
 }
 
 .interested-discription {
   font-weight: 400;
-  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
 .newsletter {
-  background-image: url(../images/background.jpg);
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .newsletter-title {
@@ -181,12 +188,11 @@ li {
 
 /*Catalog*/
 .filter {
-  background-image: url(../images/catalog-background\ 1.jpg);
+  background-image: url("../images/catalog-background-1.jpg");
 }
 
 .inner-header-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
@@ -194,39 +200,35 @@ li {
 
 .breadcrumbs-link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
 
 .catalog-filter-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
 }
 
 .catalog-filter-item {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
 }
 
 .product-card-type {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
 .product-card-price {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -234,10 +236,15 @@ li {
 
 .product-card-title {
   font-style: normal;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+}
+
+.product-card-link{
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -245,8 +252,7 @@ li {
 }
 
 .rating {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
