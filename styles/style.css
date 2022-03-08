@@ -1,3 +1,4 @@
+/*для всей страницы*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -14,13 +15,11 @@
   font-display: swap;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #ffffff;
-  color: #333333;
+html{
+  height: 100%;
 }
+
+/*для навигации*/
 
 .page-header {
   background-color: #ffffff;
@@ -30,20 +29,95 @@ body {
   font-weight: bold;
 }
 
-/*Ссылки*/
-
 .navigation-link {
-  font-family: "PT Sans Narrow", sans-serif;
-  line-height: 22px;
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #000000;
 }
 
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 345px;
+}
+
+.navigation-user{
+  margin-left: auto;
+  width: 264px;
+}
+
+/*для мейна*/
+.main-container{
+  flex-grow: 1;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: block;
+}
+
+.main-title-h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-title-h2 {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-items-list{
+  list-style-type: none;
+}
+
+.advantage-item{
+  text-align: center;
+}
+
+
+
+/*Ссылки*/
+
 .user-item-button {
   text-decoration: none;
-  font-size: 20px;
-  line-height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   background: #756257;
 }
@@ -69,26 +143,6 @@ a:visited.navigation-link {
   text-decoration: none;
 }
 
-.banner {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-/*Текст-Заголовки Main*/
-.main-title-h1 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-}
-
-.main-title-h2 {
-  font-size: 22px;
-  line-height: 36px;
-  color: #333333;
-}
 
 /** Advantages-item **/
 
@@ -103,13 +157,13 @@ a:visited.navigation-link {
 
 .advantage-item-home {
   background: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/icon-1.svg);
+  background-image: url("../images/icon-1.svg");
   background-repeat: no-repeat;
 }
 
 .advantage-item-souvenir {
   background: rgba(131, 179, 211, 0.2);
-  background-image: url(../images/icon-3.svg);
+  background-image: url("../images/icon-3.svg");
   background-repeat: no-repeat;
 }
 
@@ -124,7 +178,7 @@ a:visited.navigation-link {
 
 .advantage-item-burger {
   background: #ffffff;
-  background-image: url(../images/icon-2.svg);
+  background-image: url("../images/icon-2.svg");
   background-repeat: no-repeat;
 }
 
@@ -152,6 +206,11 @@ a:visited.navigation-link {
   color: #333333;
 }
 
+/*заинтересовались*/
+
+.interested{
+  text-align: center;
+}
 
 .interested-title {
   font-weight: 700;
@@ -166,10 +225,17 @@ a:visited.navigation-link {
   color: #333333;
 }
 
+/*футер*/
+
+.page-footer{
+  width: 100%;
+}
+
 .newsletter {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  text-align: center;
 }
 
 .newsletter-title {
@@ -185,6 +251,29 @@ a:visited.navigation-link {
   line-height: 26px;
   color: #ffffff;
 }
+
+.contacts{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social{
+  width: 107px;
+}
+
+.telephone{
+  width: 720px;
+}
+
+.html-link{
+  width: 115px;
+}
+
+
+
+
+
 
 /*Catalog*/
 .filter {
